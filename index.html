@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario básico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<main>
+  <section class="demo-form-card">
+    <h3>Formulario básico</h3>
+    <p>Completa los campos y presiona el botón.</p>
+
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" placeholder="Escribe tu edad" min="1" required>
+
+      <button type="button" onclick="mostrarDatos()">Mostrar datos</button>
+    </form>
+
+    <div id="resultado" class="resultado">
+      Aquí aparecerá la información capturada.
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
